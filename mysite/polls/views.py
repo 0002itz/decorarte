@@ -9,6 +9,3 @@ def index(request):
     return render(request,"index.html", {
         'title': title
     })
-
-#def index(request):
-#    return HttpResponse("Hello, world. You're at the polls index.")
