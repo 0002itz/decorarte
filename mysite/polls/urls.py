@@ -5,4 +5,5 @@ app_name = "polls"
 urlpatterns = [
     path("", views.index, name="index"),
     path("sigup/", views.sigup, name="sigup"),
+    path("home/", views.home, name="home"),
 ]

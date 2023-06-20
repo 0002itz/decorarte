@@ -17,3 +17,6 @@ def sigup(request):
     return render(request, "signup.html", {
         'form' : UserCreationForm
     })
+
+def home(request):
+    return render(request, "home.html")
