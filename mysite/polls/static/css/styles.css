@@ -1,6 +1,7 @@
 body{
-    background-color: black;
+    background-color: bisque;
 }
-h1,p,input,input,button{
+
+.center{
     text-align: center;
 }
