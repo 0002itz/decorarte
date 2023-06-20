@@ -17,3 +17,22 @@ def sigup(request):
     return render(request, "signup.html", {
         'form' : UserCreationForm
     })
+
+def home(request):
+    return render(request, "home.html")
+
+def documentos(request):
+    return render(request, "documentos.html")
+
+def imagenes(request):
+    return render(request, "imagenes.html")
+
+def videos(request):
+    return render(request, "videos.html")
+
+def audios(request):
+    return render(request, "audios.html")
+
+def calendario(request):
+    return render(request, "calendario.html")
+

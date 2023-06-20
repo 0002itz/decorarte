@@ -1,0 +1,24 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link href='{% static "css/styles.css" %}' rel="stylesheet">
+<body>
+    <nav>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="{% url 'polls:home' %}">Home</a>
+        <a class="nav-item nav-link" href="{% url 'polls:documentos' %}">Documentos</a>
+        <a class="nav-item nav-link" href="{% url 'polls:imagenes' %}">Imagenes</a>
+        <a class="nav-item nav-link" href="{% url 'polls:videos' %}">Vidio</a>
+        <a class="nav-item nav-link" href="{% url 'polls:audios' %}">Audios</a>
+        <a class="nav-item nav-link" href="{% url 'polls:calendario' %}">Calendario</a>
+        </div>
+    </div>
+    </nav>
+</body>
+</html>

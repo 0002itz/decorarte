@@ -1,8 +1,42 @@
-<h1>Signup</h1>
-<form action="" method="post">
-    {% csrf_token %}
-    {{form.as_p}}
+{% load static %}
+{% csrf_token %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href='{% static "css/styles.css" %}' rel="stylesheet">
+</head>
+<body>
+    <h1>Signup to de hom-lab</h1>
+    <p>
+        <label for="id_username">Username:</label>
+        <input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus required id="id_username">
+        <br>
+        <span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span>
+        </p>
+
+        <p>
+        <label for="id_password1">Password:</label>
+        <input type="password" name="password1" autocomplete="new-password" required id="id_password1">
+        <span class="helptext"><ul><li>Your password can’t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can’t be a commonly used password.</li><li>Your password can’t be entirely numeric.</li></ul></span>
+        </p>
+    
+        <p>
+        <label for="id_password2">Password confirmation:</label>
+        <input type="password" name="password2" autocomplete="new-password" required id="id_password2">
+        <br>
+        <span class="helptext">Enter the same password as before, for verification.</span>
+        </p>
+<form action="" method="post" class="center">
     <button>
         Signup
     </button>
 </form>
+</body>
+<footer class="center">
+    <h5>Desarrollador: 0002itz</h5>
+</footer>
+</html>
